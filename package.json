@@ -2,6 +2,7 @@
   "name": "mflix",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://parthosc.github.io/mflix/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
