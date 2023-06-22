@@ -1,7 +1,7 @@
 import clientPromise from "../../lib/mongodb";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const Movies = async (req: NextApiRequest, res: NextApiResponse) => {
     try {
         const client = await clientPromise;
         const db = client.db("sample_mflix");
@@ -18,3 +18,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         console.error(e);
     }
 };
+export default Movies;

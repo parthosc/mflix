@@ -12,7 +12,7 @@ export default function Movies({ movies }: { movies: any }) {
             </p>
             <ul>
                 {movies.map((movie: any) => (
-                    <li>
+                    <li key={movie.title}>
                         <h2>{movie.title}</h2>
                         <p>{movie.plot}</p>
                         <button type="button" onClick={() => router.push(`/movies/${movie.title.replaceAll(" ", "-")}`)}>View</button>
