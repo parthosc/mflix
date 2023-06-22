@@ -11,7 +11,7 @@ export const getServerSideProps: GetServerSideProps<
 > = async () => {
   try {
     await clientPromise
-    // `await clientPromise` will use the default database passed in the MONGODB_URI
+    // `await clientPromise` will use the default database passed in the DATABASE_URL
     // However you can use another database (e.g. myDatabase) by replacing the `await clientPromise` with the following code:
     //
     // `const client = await clientPromise`
